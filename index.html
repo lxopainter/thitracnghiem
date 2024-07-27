@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc Nghiệm Đúng Sai</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Trắc Nghiệm Đúng Sai</h1>
+    <form id="quizForm">
+        <h2>Câu hỏi chính: Các ý sau đây là đúng hay sai?</h2>
+
+        <div class="question">
+            <p>Câu hỏi 1:</p>
+            <div class="options">
+                <div class="option">
+                    <p>Ý A:</p>
+                    <input type="radio" id="q1_a_true" name="q1_a" value="true">
+                    <label for="q1_a_true">Đúng</label><br>
+                    <input type="radio" id="q1_a_false" name="q1_a" value="false">
+                    <label for="q1_a_false">Sai</label>
+                </div>
+
+                <div class="option">
+                    <p>Ý B:</p>
+                    <input type="radio" id="q1_b_true" name="q1_b" value="true">
+                    <label for="q1_b_true">Đúng</label><br>
+                    <input type="radio" id="q1_b_false" name="q1_b" value="false">
+                    <label for="q1_b_false">Sai</label>
+                </div>
+
+                <div class="option">
+                    <p>Ý C:</p>
+                    <input type="radio" id="q1_c_true" name="q1_c" value="true">
+                    <label for="q1_c_true">Đúng</label><br>
+                    <input type="radio" id="q1_c_false" name="q1_c" value="false">
+                    <label for="q1_c_false">Sai</label>
+                </div>
+
+                <div class="option">
+                    <p>Ý D:</p>
+                    <input type="radio" id="q1_d_true" name="q1_d" value="true">
+                    <label for="q1_d_true">Đúng</label><br>
+                    <input type="radio" id="q1_d_false" name="q1_d" value="false">
+                    <label for="q1_d_false">Sai</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Tính điểm</button>
+    </form>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
